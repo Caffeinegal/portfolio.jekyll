@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body class="font-sans font-thin">
+
+    <header class="lg:px-10 px-4 bg-white flex flex-wrap items-center py-1 shadow-md">
+        <div class="flex-1 flex justify-between items-center">
+            <a href="{{ '/index/' }}" class="text-xl hover:text-stone-400 transition text-base">Maederina</a>
+        </div>
+
+        <label for="menu-toggle" class="pointer-cursor md:hidden block">
+        <svg class="fill-current text-gray-900"
+        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+        <title>menu</title>
+        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+        </label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+            <nav>
+                <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-stone-400 transition text-base" href="{{ '/about/' }}">About</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-stone-400 transition text-base" href="{{ '/projects/' }}">Projects</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-stone-400 transition text-base" href="{{ '/contact' }}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>{{ content }}</main>
+
+    <footer class="bg-white">
+        <div class="px-4 pt-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-7xl md:px-24 lg:px-8">
+            <div class="flex flex-row justify-between pt-5 pb-10 border-t border-gray-800 sm:flex-row">
+                <p class="text-sm text-gray-500">
+                © Maederina - 2025
+                </p>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+---
+layout : default
+---
+
+<body class="h-full object-cover" style="background-image: url(https://images.pexels.com/photos/10526880/pexels-photo-10526880.jpeg)">
+
+    <!--Form Section -->
+    <section class="flex items-center justify-center mt-20 mb-20">
+
+      <div class="rounded-none p-8 shadow-sm">
+        
+        <!-- Header -->
+        <div class="mb-8 text-center">
+          <div class="mb-4 flex justify-center">
+            <svg class="h-12 w-12 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+            </svg>
+          </div>
+          <h1 class="mb-2 text-2xl font-bold text-black">{{ page.title }}</h1>
+          <p class="text-sm text-gray-600">{{ page.content }}</p>
+        </div>
+
+        <!-- Form -->
+        <form class="space-y-6">
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label for="firstName" class="mb-2 block text-sm font-medium text-gray-700">First Name</label>
+              <input type="text" id="firstName" name="firstName" class="w-full border border-gray-300 bg-white px-4 py-3 text-gray-900 focus:border-transparent focus:ring-2 focus:ring-black focus:outline-none" placeholder="Bruce" required />
+            </div>
+            <div>
+              <label for="lastName" class="mb-2 block text-sm font-medium text-gray-700">Last Name</label>
+              <input type="text" id="lastName" name="lastName" class="w-full border border-gray-300 bg-white px-4 py-3 text-gray-900 focus:border-transparent focus:ring-2 focus:ring-black focus:outline-none" placeholder="Wayne" required />
+            </div>
+          </div>
+
+          <div>
+            <label for="email" class="mb-2 block text-sm font-medium text-gray-700">Email Address</label>
+            <input type="email" id="email" name="email" class="w-full border border-gray-300 bg-white px-4 py-3 text-gray-900 focus:border-transparent focus:ring-2 focus:ring-black focus:outline-none" placeholder="your.email@example.com" required />
+          </div>
+
+          <div>
+            <label for="message" class="mb-2 block text-sm font-medium text-gray-700">Send me your message!</label>
+            <textarea type="text" id="text" name="text" class="w-full border border-gray-300 bg-white px-4 py-3 text-gray-900 focus:border-transparent focus:ring-2 focus:ring-black focus:outline-none" placeholder="Type your message" required></textarea>
+            <p class="mt-2 text-xs text-gray-500">so I can get back to you with</p>
+          </div>
+
+          <button type="submit" class="w-full bg-black px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-stone-400">Send</button>
+        </form>
+
+      </div>
+    </section>
+
+  </body>
