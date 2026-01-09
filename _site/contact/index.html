@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="font-sans font-thin">
+
+    <header class="lg:px-10 px-4 bg-white flex flex-wrap items-center py-1 shadow-md">
+        <div class="flex-1 flex justify-between items-center">
+            <a href="/index/" class="text-xl hover:text-stone-400 transition text-base">Maederina</a>
+        </div>
+
+        <label for="menu-toggle" class="pointer-cursor md:hidden block">
+        <svg class="fill-current text-gray-900"
+        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+        <title>menu</title>
+        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+        </label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+            <nav>
+                <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-stone-400 transition text-base" href="/about/">About</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-stone-400 transition text-base" href="/projects/">Projects</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-stone-400 transition text-base" href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main><body class="h-full object-cover" style="background-image: url(https://images.pexels.com/photos/10526880/pexels-photo-10526880.jpeg)">
+
+    <!--Form Section -->
+    <section class="flex items-center justify-center mt-20 mb-20">
+
+      <div class="rounded-none p-8 shadow-sm">
+        
+        <!-- Header -->
+        <div class="mb-8 text-center">
+          <div class="mb-4 flex justify-center">
+            <svg class="h-12 w-12 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+            </svg>
+          </div>
+          <h1 class="mb-2 text-2xl font-bold text-black">Contact Me!</h1>
+          <p class="text-sm text-gray-600">For any enquiries, please use this form!</p>
+        </div>
+
+        <!-- Form -->
+        <form class="space-y-6">
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label for="firstName" class="mb-2 block text-sm font-medium text-gray-700">First Name</label>
+              <input type="text" id="firstName" name="firstName" class="w-full border border-gray-300 bg-white px-4 py-3 text-gray-900 focus:border-transparent focus:ring-2 focus:ring-black focus:outline-none" placeholder="Bruce" required />
+            </div>
+            <div>
+              <label for="lastName" class="mb-2 block text-sm font-medium text-gray-700">Last Name</label>
+              <input type="text" id="lastName" name="lastName" class="w-full border border-gray-300 bg-white px-4 py-3 text-gray-900 focus:border-transparent focus:ring-2 focus:ring-black focus:outline-none" placeholder="Wayne" required />
+            </div>
+          </div>
+
+          <div>
+            <label for="email" class="mb-2 block text-sm font-medium text-gray-700">Email Address</label>
+            <input type="email" id="email" name="email" class="w-full border border-gray-300 bg-white px-4 py-3 text-gray-900 focus:border-transparent focus:ring-2 focus:ring-black focus:outline-none" placeholder="your.email@example.com" required />
+          </div>
+
+          <div>
+            <label for="message" class="mb-2 block text-sm font-medium text-gray-700">Send me your message!</label>
+            <textarea type="text" id="text" name="text" class="w-full border border-gray-300 bg-white px-4 py-3 text-gray-900 focus:border-transparent focus:ring-2 focus:ring-black focus:outline-none" placeholder="Type your message" required></textarea>
+            <p class="mt-2 text-xs text-gray-500">so I can get back to you with</p>
+          </div>
+
+          <button type="submit" class="w-full bg-black px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-stone-400">Send</button>
+        </form>
+
+      </div>
+    </section>
+
+  </body></main>
+
+    <footer class="bg-white">
+        <div class="px-4 pt-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-7xl md:px-24 lg:px-8">
+            <div class="flex flex-row justify-between pt-5 pb-10 border-t border-gray-800 sm:flex-row">
+                <p class="text-sm text-gray-500">
+                © Maederina - 2025
+                </p>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
