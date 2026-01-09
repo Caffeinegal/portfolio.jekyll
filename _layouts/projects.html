@@ -56,6 +56,16 @@ layout : default
         </div>
     </div>
 
+    <div>
+        {% for project in site site.projects %}
+        <div>
+            <h2>{{ project.title }}</h2>
+            <p>{{ project.content }}</p>
+        </div>
+        {% enfor %}
+    </div>
+
+
 </main>
     
  
