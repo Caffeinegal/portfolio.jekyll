@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: klivio
 title: Klivio with Tailwind
 ---
 

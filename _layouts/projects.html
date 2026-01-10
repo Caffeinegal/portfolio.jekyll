@@ -57,11 +57,28 @@ layout : default
     </div>
 
     <div>
-        {% for project in site site.projects %}
+        <!--ne pas s'occuper de ça-->
+        {% for projects in page.projects %}
+
         <div>
+
+```
+<a href="{{ project.url }}" class="project-card">
+        <div class="project">
             <h2>{{ project.title }}</h2>
-            <p>{{ project.content }}</p>
+            <div class="project-content">
+                <img src="{{ project.image }}" alt="{{ project.title }}">
+                <p>{{ project.description }}</p>
+            </div>
         </div>
+    </a>
+```
+
+            <h2>{{ projects.title }}</h2>
+            <p>{{ projects.url }}</p>
+        </div>
+
+        <!--ne pas s'occuper de ça-->
         {% endfor %}
     </div>
 
